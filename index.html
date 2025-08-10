@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Care Hospital</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>City Care Hospital</h1>
+        <p>Providing Quality Healthcare with Compassion</p>
+        <img src="https://cdn.pixabay.com/photo/2016/03/31/20/11/first-aid-1296140_1280.png" alt="Hospital Logo" class="logo">
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Departments</a></li>
+            <li><a href="#">Doctors</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="about">
+            <h2>About Us</h2>
+            <p>City Care Hospital is committed to delivering top-notch healthcare services with modern facilities and experienced medical staff.</p>
+            <img src="https://cdn.pixabay.com/photo/2017/08/06/01/46/hospital-2588215_1280.jpg" alt="Hospital Building" class="banner">
+        </section>
+
+        <section class="departments">
+            <h2>Our Departments</h2>
+            <div class="card">
+                <img src="https://cdn.pixabay.com/photo/2020/04/30/20/28/ambulance-5117641_1280.png" alt="Emergency Department">
+                <p>Emergency</p>
+            </div>
+            <div class="card">
+                <img src="https://cdn.pixabay.com/photo/2016/03/31/20/13/heart-1296150_1280.png" alt="Cardiology">
+                <p>Cardiology</p>
+            </div>
+            <div class="card">
+                <img src="https://cdn.pixabay.com/photo/2013/07/12/16/55/crutch-150103_1280.png" alt="Orthopedics">
+                <p>Orthopedics</p>
+            </div>
+            <div class="card">
+                <img src="https://cdn.pixabay.com/photo/2014/04/03/11/50/child-311087_1280.png" alt="Pediatrics">
+                <p>Pediatrics</p>
+            </div>
+        </section>
+
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <p>Email: info@citycare.com</p>
+            <p>Phone: +123 456 789</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 City Care Hospital. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const header = document.querySelector('header');
+        header.addEventListener('mousemove', (e) => {
+            const x = e.clientX / window.innerWidth * 100;
+            const y = e.clientY / window.innerHeight * 100;
+            header.style.setProperty('--x', `${x}%`);
+            header.style.setProperty('--y', `${y}%`);
+        });
+    </script>
+</body>
+</html>

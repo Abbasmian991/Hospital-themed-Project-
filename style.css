@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+header {
+    background-color: #0077b6;
+    color: white;
+    padding: 20px;
+    animation: fadeIn 1s ease-in;
+    position: relative;
+    overflow: hidden;
+    background-image: radial-gradient(circle at var(--x, 50%) var(--y, 50%), rgba(255,255,255,0.2), transparent 150px);
+    transition: background-position 0.1s;
+}
+
+.logo {
+    width: 100px;
+    margin-top: 10px;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.banner {
+    width: 90%;
+    max-width: 600px;
+    margin-top: 15px;
+    border-radius: 8px;
+    transition: transform 0.4s ease;
+}
+
+.banner:hover {
+    transform: scale(1.03);
+}
+
+nav {
+    background-color: #023e8a;
+    animation: slideDown 0.8s ease-in-out;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #90e0ef;
+}
+
+main {
+    padding: 20px;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+h2 {
+    color: #0077b6;
+}
+
+.card {
+    background-color: white;
+    display: inline-block;
+    padding: 15px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    width: 150px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    background-color: #90e0ef;
+    cursor: pointer;
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0px 8px 15px rgba(0,0,0,0.2);
+}
+
+.card:hover img {
+    transform: rotate(5deg) scale(1.1);
+}
+
+footer {
+    background-color: #0077b6;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    animation: fadeIn 1.2s ease;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from { transform: translateY(30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
